@@ -1,4 +1,4 @@
-# Traffic Monitor - Frontend
+# Traffic Monitor
 
 Dashboard sistem monitoring dan analisis kendaraan berbasis video rekaman.
 
@@ -37,7 +37,7 @@ Catatan: Beberapa modul masih dalam tahap pengembangan. Run Training belum terhu
 Clone repository:
 
 ```bash
-git clone https://github.com/USERNAME/traffic-monitor-frontend.git
+git clone https://github.com/USERNAME/traffic-monitor.git
 ```
 
 Masuk ke folder proyek:
@@ -104,7 +104,7 @@ Backend menggunakan:
 - FastAPI
 - PostgreSQL
 
-Backend dikelola dalam repository terpisah.
+Backend FastAPI dan PostgreSQL akan ditempatkan dalam folder `backend/` pada repository ini.
 
 ## Project
 

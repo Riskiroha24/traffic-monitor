@@ -35,3 +35,9 @@ dist-ssr
 /fix_layout.py
 /integrate.py
 /update_dataset.py
+
+# Demo videos - excluded pending redistribution permission
+/public/*.mp4
+
+# Demo videos - excluded until redistribution permission is confirmed
+/public/*.mp4
