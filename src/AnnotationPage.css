@@ -1,0 +1,279 @@
+.annotation-page {
+  width: 100%;
+  min-height: 680px;
+  padding: 20px 12px 35px;
+  color: #202b3c;
+}
+
+.annotation-heading {
+  margin-bottom: 24px;
+}
+
+.annotation-heading h2 {
+  margin: 0 0 8px;
+  color: #173b70;
+  font-size: 27px;
+}
+
+.annotation-heading p {
+  margin: 0;
+  color: #65748b;
+  font-size: 14px;
+}
+
+.annotation-card {
+  width: 100%;
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid #e1e9f5;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #173b700a;
+}
+
+.annotation-toolbar {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.annotation-toolbar > div:first-child {
+  flex: 1;
+}
+
+.annotation-toolbar label,
+.annotation-controls label {
+  display: block;
+  margin-bottom: 9px;
+  color: #34445d;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.annotation-toolbar select,
+.annotation-controls select {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid #d5dfed;
+  border-radius: 9px;
+  background: #f9fbfe;
+  color: #34445d;
+  font-size: 14px;
+}
+
+.annotation-image-info {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 130px;
+  color: #65748b;
+  font-size: 12px;
+}
+
+.annotation-image-info strong {
+  color: #173b70;
+  font-size: 15px;
+}
+
+.annotation-instruction {
+  margin-bottom: 15px;
+  padding: 13px 16px;
+  border: 1px solid #dbe7f8;
+  border-radius: 8px;
+  background: #f1f6ff;
+  color: #24569a;
+  font-size: 13px;
+}
+
+.annotation-canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 350px;
+  padding: 20px;
+  overflow: hidden;
+  border: 1px dashed #cbd8e9;
+  border-radius: 10px;
+  background: #f4f7fc;
+}
+
+.annotation-image-wrap {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  max-height: 650px;
+  line-height: 0;
+}
+
+.annotation-image-wrap img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 600px;
+  height: auto;
+  border-radius: 5px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.annotation-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  overflow: visible;
+}
+
+.annotation-controls {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.annotation-controls > div:first-child {
+  flex: 1;
+  max-width: 350px;
+}
+
+.annotation-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.annotation-actions button {
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.annotation-save {
+  border: 1px solid #1d55a5;
+  background: #1d55a5;
+  color: #ffffff;
+}
+
+.annotation-save:hover:not(:disabled) {
+  background: #174582;
+}
+
+.annotation-validate {
+  border: 1px solid #16834a;
+  background: #16834a;
+  color: #ffffff;
+}
+
+.annotation-validate:hover:not(:disabled) {
+  background: #116b3c;
+}
+
+.annotation-actions button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.annotation-summary {
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid #e1e9f5;
+  border-radius: 9px;
+  background: #f8faff;
+  color: #52647e;
+  font-size: 13px;
+}
+
+.annotation-summary strong {
+  display: block;
+  margin-bottom: 12px;
+  color: #173b70;
+  font-size: 15px;
+}
+
+.annotation-summary div {
+  padding: 6px 0;
+  border-top: 1px solid #e5ebf4;
+}
+
+.annotation-message,
+.annotation-error {
+  margin-top: 16px;
+  padding: 13px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.annotation-message {
+  background: #eaf3ff;
+  color: #1d55a5;
+}
+
+.annotation-error {
+  background: #fff0f0;
+  color: #b42318;
+}
+
+.annotation-empty {
+  padding: 65px 20px;
+  border: 1px dashed #cbd8e9;
+  border-radius: 10px;
+  background: #f8faff;
+  text-align: center;
+}
+
+.annotation-empty h3 {
+  margin: 0 0 10px;
+  color: #173b70;
+}
+
+.annotation-empty p {
+  margin: 0;
+  color: #65748b;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .annotation-toolbar,
+  .annotation-controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .annotation-controls > div:first-child {
+    max-width: none;
+  }
+
+  .annotation-actions {
+    width: 100%;
+  }
+
+  .annotation-actions button {
+    flex: 1;
+  }
+}
+
+@media (max-width: 560px) {
+  .annotation-card {
+    padding: 16px;
+  }
+
+  .annotation-canvas {
+    min-height: 230px;
+    padding: 10px;
+  }
+
+  .annotation-actions {
+    flex-direction: column;
+  }
+
+  .annotation-actions button {
+    width: 100%;
+  }
+}

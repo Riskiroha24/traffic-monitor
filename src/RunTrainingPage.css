@@ -1,0 +1,148 @@
+.training-page {
+  width: 100%;
+  min-height: 680px;
+  padding: 20px 12px 30px;
+  color: #202b3c;
+}
+
+.training-intro {
+  margin-bottom: 25px;
+}
+
+.training-intro h2 {
+  margin: 0 0 8px;
+  font-size: 27px;
+  color: #173b70;
+}
+
+.training-intro p {
+  margin: 0;
+  color: #65748b;
+  font-size: 14px;
+}
+
+.training-card {
+  width: min(100%, 850px);
+  padding: 28px 32px;
+  background: #ffffff;
+  border: 1px solid #e1e9f5;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #173b700a;
+}
+
+.training-card h2 {
+  margin: 0 0 28px;
+  font-size: 23px;
+  color: #173b70;
+}
+
+.training-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.training-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.training-fields label span {
+  font-size: 15px;
+  font-weight: 650;
+  color: #34445d;
+}
+
+.training-fields select {
+  width: 100%;
+  height: 54px;
+  padding: 0 16px;
+  border: 1px solid #d5dfed;
+  border-radius: 9px;
+  background: #f9fbfe;
+  color: #34445d;
+  font-size: 14px;
+  outline: none;
+}
+
+.training-fields select:focus {
+  border-color: #1d55a5;
+}
+
+.training-info {
+  margin-top: 28px;
+  padding: 20px;
+  background: #f4f7fc;
+  border: 1px solid #e2eaf5;
+  border-radius: 9px;
+}
+
+.training-info h3 {
+  margin: 0 0 14px;
+  font-size: 16px;
+  color: #173b70;
+}
+
+.training-info p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #52647e;
+}
+
+.training-run-button {
+  width: 100%;
+  height: 54px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 9px;
+  background: #1d55a5;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.training-run-button:hover {
+  background: #174582;
+}
+
+.training-message {
+  margin: 16px 0 0;
+  padding: 12px;
+  background: #eef4ff;
+  border-radius: 8px;
+  color: #1d55a5;
+  font-size: 13px;
+}
+
+.training-progress {
+  width: min(100%, 850px);
+  margin-top: 24px;
+  padding: 24px 28px;
+  background: #ffffff;
+  border: 1px solid #e1e9f5;
+  border-radius: 12px;
+}
+
+.training-progress h2 {
+  margin: 0 0 12px;
+  font-size: 19px;
+  color: #173b70;
+}
+
+.training-progress p {
+  margin: 0;
+  color: #65748b;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .training-card {
+    padding: 22px 18px;
+  }
+
+  .training-progress {
+    padding: 20px 18px;
+  }
+}
